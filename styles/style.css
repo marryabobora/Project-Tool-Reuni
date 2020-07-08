@@ -114,7 +114,7 @@ input[type=checkbox]:checked ~ .nav #hamicon {
   padding-top: 84px;
   -webkit-transition: all .5s;
   transition: all .5s;
-  margin-top: -380px;
+  margin-top: -500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,10 +158,9 @@ input[type=checkbox]:checked ~ .nav #hamicon {
 
 #mobile-menu .div-menuinterno .div-per .div-perfil {
   background-color: white;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 5pc;
-  margin-bottom: 10px;
 }
 
 #mobile-menu .div-menuinterno .menu_todasfilas {
@@ -194,5 +193,14 @@ input[type=checkbox]:checked ~ .nav #hamicon {
 
 label {
   color: white;
+}
+
+/*Div diagonal*/
+.div-transform {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #B1A6F6;
+  border-right: 212vh solid transparent;
+  margin-top: 90px;
 }
 /*# sourceMappingURL=style.css.map */

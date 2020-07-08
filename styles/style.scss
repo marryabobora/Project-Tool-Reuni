@@ -27,6 +27,7 @@
     padding-top: 40px;
     align-items: center;
     z-index: 2;
+   
 
     #xicon {
       display: none;
@@ -95,7 +96,7 @@
     height: 300px;
     padding-top: 84px;
     transition: all .5s;
-    margin-top: -380px;
+    margin-top: -500px;
     display: flex;
     justify-content: center;
     
@@ -128,10 +129,10 @@
 
             .div-perfil{
               background-color: white;
-              width: 120px;
-              height: 120px;
+              width: 150px;
+              height: 150px;
               border-radius: 5pc;
-              margin-bottom: 10px;
+        
             }
           }
 
@@ -170,4 +171,13 @@
     color: white;
   }
 
+  /*Div diagonal*/
 
+.div-transform {
+  width: 0;
+  height: 0;
+  border-top: 50px solid $color_default;
+  border-right: 212vh solid transparent;
+  margin-top: 90px;
+  
+}
