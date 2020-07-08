@@ -1,0 +1,67 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #B1A6F6;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav #xicon {
+  display: none;
+}
+
+.nav nav {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #mobile-menu {
+  -webkit-transform: translateY(344px);
+          transform: translateY(344px);
+}
+
+input[type=checkbox]:checked ~ .nav #xicon {
+  display: block;
+}
+
+input[type=checkbox]:checked ~ .nav #hamicon {
+  display: none;
+}
+
+#mobile-menu {
+  position: absolute;
+  background-color: #B1A6F6;
+  width: 100%;
+  height: 224px;
+  padding-top: 20px;
+  top: 10px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  margin-top: -310px;
+}
+
+#hamburguer {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
