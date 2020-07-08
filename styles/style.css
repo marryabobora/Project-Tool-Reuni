@@ -1,8 +1,18 @@
+/*Colores*/
+/*fontes*/
+/*Letras*/
 * {
   padding: 0px;
   margin: 0px;
+  font-family: "Lato", sans-serif;
 }
 
+u, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Menu*/
 .nav {
   width: 100%;
   display: -webkit-box;
@@ -19,17 +29,63 @@
   position: absolute;
   top: 0;
   padding: 20px;
+  padding-top: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .nav #xicon {
   display: none;
 }
 
-.nav nav {
-  display: none;
+.nav .nav-principal {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav .nav-principal .horizontal-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+}
+
+.nav .nav-principal .horizontal-menu .menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2pxs;
+  background-color: #ffff;
+  width: 120px;
+  height: 30px;
+  border-radius: 5pc;
+  color: #293787;
 }
 
 input[type=checkbox] {
@@ -37,8 +93,8 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked ~ #mobile-menu {
-  -webkit-transform: translateY(344px);
-          transform: translateY(344px);
+  -webkit-transform: translateY(370px);
+          transform: translateY(370px);
 }
 
 input[type=checkbox]:checked ~ .nav #xicon {
@@ -49,19 +105,95 @@ input[type=checkbox]:checked ~ .nav #hamicon {
   display: none;
 }
 
+/*Menu interno*/
 #mobile-menu {
   position: absolute;
   background-color: #B1A6F6;
   width: 100%;
-  height: 224px;
-  padding-top: 20px;
-  top: 10px;
+  height: 300px;
+  padding-top: 84px;
   -webkit-transition: all .5s;
   transition: all .5s;
-  margin-top: -310px;
+  margin-top: -380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#hamburguer {
+#mobile-menu .div-menuinterno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+  width: 90%;
+  padding-top: 25px;
+}
+
+#mobile-menu .div-menuinterno a, #mobile-menu .div-menuinterno u, #mobile-menu .div-menuinterno li {
+  color: #ffff;
+}
+
+#mobile-menu .div-menuinterno .div-per {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#mobile-menu .div-menuinterno .div-per .div-perfil {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 5pc;
+}
+
+#mobile-menu .div-menuinterno .menu_todasfilas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 80%;
+  height: 60%;
+}
+
+#mobile-menu .div-menuinterno .menu_fila {
+  margin-top: 40px;
+  font-size: 15px;
+  color: #ffff;
+}
+
+#mobile-menu .div-menuinterno .menu_fila .menu-titulo {
+  font-size: 30px;
+  font-style: bold;
+}
+
+label {
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

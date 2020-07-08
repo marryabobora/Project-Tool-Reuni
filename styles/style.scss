@@ -1,11 +1,21 @@
-@import 'styles/_variables.scss';
+@import '_variables.scss';
 
 * {
     padding: 0px;
     margin: 0px; 
+    font-family: $lato;
   }
-  
+
+  u,li,a {
+    list-style: none;
+    text-decoration: none;
+  }
+
+
+  /*Menu*/
+
   .nav {
+    
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -14,18 +24,51 @@
     position: absolute;
     top: 0;
     padding: 20px;
+    padding-top: 40px;
     align-items: center;
+    z-index: 2;
 
     #xicon {
       display: none;
     }
     
-    nav {
-      display: none;
+    .nav-principal{
+      width: 100%;
+   
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+
+    .horizontal-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+    
+       
+      
+
+      .menu-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2pxs;
+        background-color:$white;
+        width: 120px;
+        height: 30px;
+        border-radius: 5pc;
+        color: $font_menu_color;
+
+      }
     }
+
+
   }
 
- 
+  }
+
     
   input[type=checkbox] {
     display: none;
@@ -43,19 +86,89 @@
     }
   }
 
-  
+ /*Menu interno*/
 
   #mobile-menu {
     position: absolute;
-    background-color: $color_default;
+    background-color:$color_default;
     width: 100%;
-    height: 224px;
-    padding-top: 50px;
-    top: 30px;
+    height: 300px;
+    padding-top: 84px;
     transition: all .5s;
     margin-top: -380px;
+    display: flex;
+    justify-content: center;
+    
+    
+
+
+
+    .div-menuinterno{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 30px;
+      width: 90%;
+      padding-top: 25px;
+      
+      a,u,li {
+        color:$menu_inside; 
+      }
+      
+      
+
+      .div-per{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-around;
+
+            span{
+              
+            }
+
+            .div-perfil{
+              background-color: white;
+              width: 150px;
+              height: 150px;
+              border-radius: 5pc;
+            }
+          }
+
+      .menu_todasfilas {
+        display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+      width: 80%;
+      height: 60%;
+
+      }
+
+      .menu_fila {
+        margin-top: 40px;
+        font-size: $menu-letra;
+        color: $menu_inside;
+        
+  
+  
+        .menu-titulo {
+          font-size: $menu-titulo;
+          font-style: $menu-titulo-bold;
+        }
+      }
+
+      
+    }
+
+    
+
+
   }
 
   label {
     color: white;
   }
+
+

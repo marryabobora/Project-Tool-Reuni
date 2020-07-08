@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Tool</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c1d1e8173e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 
@@ -13,17 +13,6 @@
 <body>
 
     <!--Menu-->
- 
-    <input type="checkbox" id="check">
-    <nav id="mobile-menu">      
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Filas</a></li>
-            <li><a href="">Calendário</a></li>
-            <li><a href="">Chat</a></li>
-        </ul>
-    </nav>    
-
 
     <div class="nav">
        
@@ -32,7 +21,93 @@
             <i style="color: white; font-size: 30px;"  class="fas fa-times" id="xicon" ></i>
         </label>  
 
+        <nav class="nav-principal" >      
+            <ul class="horizontal-menu">
+                <label class="menu-button"><a href=""><li >Inicio</li></a></label>
+                <label class="menu-button"><a href=""><li >Filas</li></a></label>
+                <label class="menu-button"><a href=""><li ><a href="">Calendário</li></a></label>
+                <label class="menu-button"><a href=""><li ><a href="">Chat</li></a></label>
+            </ul>
+        </nav> 
+        
     </div>
+
+ <!-- Opções dentro do menu-->
+
+    <input type="checkbox" id="check">
+    <nav id="mobile-menu"> 
+
+        <div class="div-menuinterno">
+
+        <div class="div-per">
+            <div class="div-perfil"></div>
+            <a><span>Configurações</span></a>
+            <a><span>Sair</span></a>
+        </div>
+        
+        <div class="menu_todasfilas">
+
+                <div class="menu_fila">
+                    <ul>
+                        <li class="menu-titulo"><a href="">Filas</a></li></br>
+                        <li><a href="">Matérias</a></li>
+                        <li><a href="">Revisão</a></li>
+                        <li><a href="">Postagem</a></li>
+                        <li><a href="">Teste de Marketing</a></li>
+                    </ul>
+
+                </div>
+            
+                <div class="menu_fila">
+                    <ul>
+                        <li><a href="">Matérias Extruturais</a></li>
+                        <li><a href="">Matérias de Tráfego</a></li>
+                        <li><a href="">Revisão Semestral</a></li>
+                        <li><a href="">Arquivadas</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="menu_fila">
+                    <ul>
+                        <li class="menu-titulo"><a href="">Sites</a></li></br>
+                        <li><a href="">Trabalho Ideal</a></li>
+                        <li><a href="">Mentor Profissional</a></li>
+                        <li><a href="">Carreira & Profissão</a></li>
+                        <li><a href="">Técnico do emprego</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="menu_fila">
+                    <ul>
+                        <li><a href="">Mentor Profissional</a></li>
+                        <li><a href="">Idéia Livre</a></li>
+                        <li><a href="">Eu quero trabalhar</a></li>
+                        <li><a href="">Jovem Aprendiz Brasil</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="menu_fila">
+                    <ul>
+                        <li><a href="">Blog do Job</a></li>
+                        <li><a href="">Outro</a></li>
+                        <li><a href="">Outro</a></li>
+                        <li><a href="">Outro</a></li>
+                    </ul>
+
+                </div>
+        </div>
+
+
+        </div>
+
+
+    </nav>    
+
+
+
  
 
 
