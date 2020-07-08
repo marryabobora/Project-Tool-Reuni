@@ -154,15 +154,14 @@ input[type=checkbox]:checked ~ .nav #hamicon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 #mobile-menu .div-menuinterno .div-per .div-perfil {
   background-color: white;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 5pc;
+  margin-bottom: 10px;
 }
 
 #mobile-menu .div-menuinterno .menu_todasfilas {
