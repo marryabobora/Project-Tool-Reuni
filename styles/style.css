@@ -5,6 +5,7 @@
   padding: 0px;
   margin: 0px;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 u, li, a {
@@ -200,7 +201,242 @@ label {
   width: 0;
   height: 0;
   border-top: 50px solid #B1A6F6;
-  border-right: 212vh solid transparent;
+  border-right: 210vh solid transparent;
   margin-top: 90px;
+}
+
+/*Container*/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container .task-box {
+  width: 49vw;
+  height: 350px;
+  display: -ms-grid;
+  display: grid;
+  display: grid;
+  -ms-grid-columns: 5% 23% 18% 18% 18% 18%;
+      grid-template-columns: 5% 23% 18% 18% 18% 18%;
+  -ms-grid-rows: 12% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 4%;
+      grid-template-rows: 12% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 4%;
+  background-color: #B1A6F6;
+  text-align: center;
+  color: #293787;
+      grid-template-areas: ". mytask mytask mytask mytask mytask" "circle task status line website date" "circle2 task2 status2 line2 website2 date2" "c c c c c c " "d d d d d d " "e e e e e e " "f f f f f f " "g g g g g g " "h h h h h h " "i i i i i i " "j j j j j j " "k k k k k k ";
+  border-radius: 1em;
+  font-size: 15px;
+}
+
+.container .task-box .box-mytasks {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: mytask;
+  color: #ffff;
+  padding-top: 0.6vw;
+  text-align: left;
+  font-size: 18px;
+}
+
+.container .task-box .box-circle {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: circle;
+  background-color: #FFFFFF;
+}
+
+.container .task-box .box-task {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: task;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+
+.container .task-box .box-line {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: line;
+  background-color: #FFFFFF;
+  color: #F9A7E9;
+}
+
+.container .task-box .box-status {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: status;
+  background-color: #FFFFFF;
+  color: #F9A7E9;
+}
+
+.container .task-box .box-site {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: website;
+  background-color: #FFFFFF;
+  color: #F9A7E9;
+}
+
+.container .task-box .box-date {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: date;
+  background-color: #FFFFFF;
+  color: #A7B3F9;
+}
+
+.container .task-box .box-circle2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: circle2;
+  background-color: #F5F5F5;
+}
+
+.container .task-box .box-task2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: task2;
+  background-color: #F5F5F5;
+  text-align: left;
+}
+
+.container .task-box .box-line2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: line2;
+  background-color: #F5F5F5;
+  color: #F9A7E9;
+}
+
+.container .task-box .box-status2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: status2;
+  background-color: #F5F5F5;
+  color: #F9A7E9;
+}
+
+.container .task-box .box-site2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: website2;
+  background-color: #F5F5F5;
+  color: #F9A7E9;
+}
+
+.container .task-box .box-date2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+  grid-area: date2;
+  background-color: #F5F5F5;
+  color: #A7B3F9;
+}
+
+.container .task-box .c-- {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: c;
+  background-color: #FFFFFF;
+}
+
+.container .task-box .d-- {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: d;
+  background-color: #F5F5F5;
+}
+
+.container .task-box .e-- {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: e;
+  background-color: #FFFFFF;
+}
+
+.container .task-box .f-- {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: f;
+  background-color: #F5F5F5;
+}
+
+.container .task-box .g-- {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: g;
+  background-color: #FFFFFF;
+}
+
+.container .task-box .h-- {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: h;
+  background-color: #F5F5F5;
+}
+
+.container .task-box .i-- {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: i;
+  background-color: #FFFFFF;
+}
+
+.container .task-box .j-- {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: j;
+  background-color: #F5F5F5;
+}
+
+.container .task-box .box-button {
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: k;
+  background-color: #B1A6F6;
+}
+
+/*Calendario*/
+.calendario {
+  margin-top: 30px;
+}
+
+.calendario h2 {
+  margin-top: 3vw;
+  margin-left: 18vw;
+  color: #B1A6F6;
+  font-size: 40px;
+  position: absolute;
+}
+
+.calendario .div-transform2 {
+  width: 100%;
+  height: 0;
+  border-bottom: 200px solid #B1A6F6;
+  border-left: 210vh solid transparent;
+}
+
+.calendario .name {
+  width: 100%;
+  height: 500px;
+  background-color: #B1A6F6;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px; 
     font-family: $lato;
+    overflow-x:hidden
   }
 
   u,li,a {
@@ -177,7 +178,200 @@
   width: 0;
   height: 0;
   border-top: 50px solid $color_default;
-  border-right: 212vh solid transparent;
+  border-right: 210vh solid transparent;
   margin-top: 90px;
   
+}
+
+
+/*Container*/
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .task-box {
+    width: 49vw;
+    height: 350px;
+    display: grid;
+    display: grid;
+    grid-template-columns: 5% 23% 18% 18% 18% 18%;
+    grid-template-rows: 12% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 4%;
+    background-color: $color_default;
+    text-align: center;
+    color: $font_menu_color;
+    grid-template-areas:
+    ". mytask mytask mytask mytask mytask"
+    "circle task status line website date"
+    "circle2 task2 status2 line2 website2 date2"
+    "c c c c c c "
+    "d d d d d d "
+    "e e e e e e "
+    "f f f f f f "
+    "g g g g g g "
+    "h h h h h h "
+    "i i i i i i "
+    "j j j j j j "
+    "k k k k k k "
+    ;
+    border-radius: 1em;
+    font-size: $box-letra;
+  
+  
+    .box-mytasks {
+      grid-area: mytask;
+      color: $white;
+      padding-top: 0.6vw; 
+      text-align: left;
+      font-size: $box-title;
+      
+    }
+  
+    .box-circle {
+      grid-area: circle;
+      background-color: $box-color-1;
+    
+      
+    }
+    .box-task {
+      grid-area: task;
+      background-color: $box-color-1;
+      text-align: left;
+      }
+    
+    .box-line{
+      grid-area: line;
+      background-color: $box-color-1;
+      color: $box-pink;
+    }
+    .box-status{
+      grid-area: status;
+      background-color: $box-color-1;
+      color: $box-pink;
+    }
+    .box-site{
+      grid-area: website;
+      background-color: $box-color-1;
+      color: $box-pink;
+    }
+    .box-date{
+      grid-area: date;
+      background-color: $box-color-1;
+      color: $box-date;
+    }
+  
+    //row2
+  
+  
+    .box-circle2 {
+      grid-area: circle2;
+      background-color: $box-color-2;
+      
+    }
+    .box-task2 {
+      grid-area: task2;
+      background-color: $box-color-2;
+      text-align: left;
+      }
+    
+    .box-line2{
+      grid-area: line2;
+      background-color: $box-color-2;
+      color: $box-pink;
+    }
+    .box-status2{
+      grid-area: status2;
+      background-color: $box-color-2;
+      color: $box-pink;
+    }
+    .box-site2{
+      grid-area: website2;
+      background-color: $box-color-2;
+      color: $box-pink;
+    }
+    .box-date2{
+      grid-area: date2;
+      background-color: $box-color-2;
+      color: $box-date;
+    }
+   
+    .c--{
+      grid-area: c;
+      background-color: $box-color-1;
+    }
+  
+    .d--{
+      grid-area: d;
+      background-color: $box-color-2;
+    }
+    
+    .e--{
+      grid-area: e;
+      background-color: $box-color-1;
+    }
+  
+    .f--{
+      grid-area: f;
+      background-color: $box-color-2;
+    }
+  
+    .g--{
+      grid-area: g;
+      background-color: $box-color-1;
+    }
+    .h--{
+      grid-area: h;
+      background-color: $box-color-2;
+    }
+    .i--{
+      grid-area: i;
+      background-color: $box-color-1;
+    }
+    .j--{
+      grid-area: j;
+      background-color: $box-color-2;
+    }
+    .box-button{
+      grid-area: k;
+      background-color: $color_default;
+    }
+  
+  
+  }
+  
+}
+
+
+/*Calendario*/
+
+.calendario {
+margin-top: 30px;
+
+  h2{
+    margin-top: 3vw;
+    margin-left: 18vw;
+    color: $color_default;
+    font-size: $menu-h2;
+    position: absolute;
+  
+  }
+
+  .div-transform2 {
+  width: 100%;
+  height: 0;
+  border-bottom: 200px solid $color_default;
+  border-left: 210vh solid transparent;
+  
+  
+}
+
+.name {
+  width: 100%;
+  height: 500px;
+  background-color: $color_default;
+}
+
 }
