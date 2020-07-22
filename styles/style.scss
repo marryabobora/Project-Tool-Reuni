@@ -193,6 +193,8 @@
   margin-top: 20px;
   margin-bottom: 20px;
 
+  
+
   .task-box {
     width: 49vw;
     height: 350px;
@@ -220,12 +222,16 @@
     border-radius: 1em;
     font-size: $box-letra;
   
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   
     .box-mytasks {
       grid-area: mytask;
       color: $white;
-      padding-top: 0.6vw; 
-      text-align: left;
+      padding-top: 0.7vw; 
       font-size: $box-title;
       
     }
@@ -368,10 +374,36 @@ margin-top: 30px;
   
 }
 
-.name {
+.calendar {
   width: 100%;
-  height: 500px;
+  height: 800px;
   background-color: $color_default;
 }
+
+}
+
+/*Footer*/
+
+footer {
+  width: auto;
+  height: 110px;
+  background-color:$footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 15vw;
+  margin-left: 2vw;
+  
+
+  
+    img {
+      width: 3vw;
+    }
+
+    .bottom-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
 }

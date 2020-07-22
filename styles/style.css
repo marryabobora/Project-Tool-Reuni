@@ -237,14 +237,25 @@ label {
   font-size: 15px;
 }
 
+.container .task-box span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .container .task-box .box-mytasks {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-area: mytask;
   color: #ffff;
-  padding-top: 0.6vw;
-  text-align: left;
+  padding-top: 0.7vw;
   font-size: 18px;
 }
 
@@ -434,9 +445,45 @@ label {
   border-left: 210vh solid transparent;
 }
 
-.calendario .name {
+.calendario .calendar {
   width: 100%;
-  height: 500px;
+  height: 800px;
   background-color: #B1A6F6;
+}
+
+/*Footer*/
+footer {
+  width: auto;
+  height: 110px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 15vw;
+  margin-left: 2vw;
+}
+
+footer img {
+  width: 3vw;
+}
+
+footer .bottom-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
